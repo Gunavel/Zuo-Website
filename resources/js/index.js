@@ -1,11 +1,10 @@
+import "../css/index.scss";
 const rightButton = document.getElementById("right");
 const leftButton = document.getElementById("left");
 const cardContainer = document.getElementsByClassName(
   "carousal-card-container"
 )[0];
-function activateCarousal() {
-  rightButton.click();
-}
+
 rightButton.addEventListener("click", (e) => {
   cardContainer.scrollTo({
     top: 0,
@@ -21,3 +20,5 @@ leftButton.addEventListener("click", (e) => {
     behavior: "smooth",
   });
 });
+
+rightButton.click();
